@@ -10,12 +10,13 @@ module.exports = {
   onStart: function(){},
   onChat: async function({event,message,api}) {
     const prefixRegex = new RegExp(`^${prefix}ai`)
-    if(event.body?.match(prefixRegex) || /^ai/.test(event.body)) {
+    if(event.body.toLowerCase()?.match(prefixRegex) || /^ai/.test(event.body.toLowerCase())) {
 
       try{
-      const prompt = event.body?.replace(/^ai/, '').trim();
+      const prompt = event.body?.replace(/^ai/i, '').trim();
+        if(!prompt) return message.reply("No prompt provided")
 
-      const {data} = await axios.get("https://renzapi.onrender.com/api/ai2", {params: {
+       const {data} = await axios.get("https://the-useless-api.vercel.app/gpt", {params: {
         prompt,
         uid: event.senderID
       }})
