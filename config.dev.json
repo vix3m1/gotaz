@@ -134,7 +134,7 @@
     "presence": false
   },
   "optionsFca": {
-    "forceLogin": true,
+    "forceLogin": false,
     "listenEvents": true,
     "updatePresence": false,
     "listenTyping": false,
@@ -142,7 +142,7 @@
     "selfListen": false,
     "selfListenEvent": false,
     "autoMarkDelivery": false,
-    "autoReconnect": false,
+    "autoReconnect": true,
     "notes": "Document here: https://github.com/ntkhang03/fb-chat-api/blob/master/DOCS.md#apisetoptionsoptions "
   }
 }
