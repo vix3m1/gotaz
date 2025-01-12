@@ -43,10 +43,10 @@
   "timeZone": "Asia/Manila",
   "credentials": {
     "gmailAccount": {
-      "email": "renzmansueto091@gmail.com",
-      "clientId": "923633511859-qg8ohhu5p4229kmmstm4m2ajvpms5t4p.apps.googleusercontent.com",
-      "clientSecret": "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",
-      "refreshToken": "1//04xqyOATLmbxoCgYIARAAGAQSNwF-L9IrP2n5Ci6phfvLTgVlZ0ee_QoS_tct_SrCSUhIPXVP2USr-vYDNYWG8q50ED8vGCZbHRI",
+      "email": "",
+      "clientId": "",
+      "clientSecret": "",
+      "refreshToken": "l",
       "apiKey": ""
     },
     "gRecaptcha": {
